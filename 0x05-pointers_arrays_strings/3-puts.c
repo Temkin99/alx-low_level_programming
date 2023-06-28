@@ -1,19 +1,18 @@
 #include "main.h"
+#include <unistd.h>
 /**
- * print_rev - toma la cadena de la funcion.
- * @s: value taken from main
- * Return: (0)
+ *_puts - prints a string, to stdout
+ *@str: value to be evaluate.
+ *Return: not.
  */
-void print_rev(char *s)
+void _puts(char *str)
 {
-  int len;
+  int l = 0;
 
-  for (len = 0; s[len] != '\0'; len++)
+  while (*(str + l) != '\0')
   {
-  }
-  for (len = len - 1; len >= 0; len--)
-  {
-    _putchar(s[len]);
+    _putchar(str[l]);
+    l++;
   }
   _putchar('\n');
 }
