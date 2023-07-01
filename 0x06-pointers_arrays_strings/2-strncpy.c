@@ -1,7 +1,5 @@
 #include "main.h"
-#include <stdio.h>
 /**
- * main - check the code or Alx  students.
  * _strncpy - copy a string
  * @dest: input value
  * @src: input value
