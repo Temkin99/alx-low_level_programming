@@ -7,14 +7,32 @@
  *
  * return: copied memory with n byted changed
  */
+
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
-int r = 0;
-int i = n;
-for (; r < i; r++)
+char *p = dest;
+while (n--)
 {
-dest[r] = src[r];
-n--;
+*p++ = *src++;
 }
-retun (dest);
+return (dest);
 }
+
+int main(void)
+{
+char src[] = "Hello, world!";
+char dest[20];
+_memcpy(dest, src, sizeof(src));
+printf("Copied string is: %s\n", dest);
+return (0);
+}
+
+
+
+
+
+
+
+
+
+
