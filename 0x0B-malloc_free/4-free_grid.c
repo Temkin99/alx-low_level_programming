@@ -1,4 +1,4 @@
-#includ "main.h"
+#include "main.h"
 
 /**
  * free_grid - main func
